@@ -4,9 +4,9 @@ void QuickSort(vector<int> &vec, int L, int R) {
     j = R;
     o = (vec[i] + vec[j] + vec[(i + j) / 2]) / 3;
     while (i <= j) {
-        while (massZarp[i] < o)
+        while (vec[i] < o)
             ++i;
-        while (massZarp[j] > o)
+        while (vec[j] > o)
             --j;
         if (i <= j) {
             x = vec[i];
